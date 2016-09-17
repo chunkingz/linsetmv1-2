@@ -1,15 +1,17 @@
 # linsetmv1-2
 
 Linset is a WPA/WPA2 phishing tool
+=====
 Linset Is Not a Social Enginering Tool
 
 ======
 
-The contents of this readme.md file copied from the original scripts readme.md file which was written in spanish and translated to English, also i must add that this script was revamped by the musket teams, many bugs corrected by them and many thanks to them for that, 
+The contents of this readme.md file copied from the original scripts readme.md file which was written in spanish and translated to English, also i must add that this script was revamped by the musket teams, many bugs corrected by them and many thanks to them for that.
+======
 I on the other hand translated 99.9% of the script back to English and also added airmon for those using kali 2.0 and Rolling 2016.1/2016.2, because if you dont use kali 1.0 to run script it runs into issues with the newer airmon-ng which uses wlan0mon as the monitor interface instead of mon0. so adding airmon in the same directory as the main script and tweaking the main script a bit makes everything works flawlessly across all versions of kali linux.
 But still many thanks to vk496 for a nice script and also musket teams(mmusket33) for revamping it.
 And also myself :D
-
+=======
 Before using the script make sure to read the Help text file written by the musket teams explaining what they did and how to use the script. Doesnt take much of your time tho.
 
 ========
