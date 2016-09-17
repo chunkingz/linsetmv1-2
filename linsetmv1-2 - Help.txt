@@ -1,0 +1,45 @@
+Help Files for linset1-1mv.sh
+
+A Musket Team Field Operation version of linset designed specifically for WPA Phishing
+
+    Reader Note: The version has two(2) methods to obtain a WPA Key. MTeams has only altered the Phishing module. No study or work was done on the handshake module nor was this module ever tested. 
+
+     Setup
+
+    To run linset in Kali-linux, only two(2) additional programs are required(rqr). They are lighttpd and php5-cgi.
+
+    Obtain an internet connection, open a terminal window and type:
+
+      apt-get install lighttpd
+
+      apt-get install php5-cgi
+
+   After you unzip the download, place the linset folder found in the download into root. This folder contains a php file, a backup php  and an alldata.txt. You cannot change the name of the linset folder or place it in another location unless you change the bash coding. The stock linset program does not have a linset folder. We will explain why this folder is necessary and prefered.
+
+   In the stock program linset runs all its external file operations from a /temp/TMPlinset folder. It loads all files necessary from the script itself into this folder and erases all these files at shutdown. An elegant way of running a program to be sure but this causes two(2) major problems. The web pages rqr a php program to function. When trying to load php files embedded in bash script to the /tmp/TMPlinset/ folder, it appears that some of the coding is lost in translation and the pages do not function. To correct this MTeams simply wrote the php file in a text editor, placed it in a folder in root called linset and just copied these files over to the tmp/TMPlinset folder at program start. After that the programs' web pages functioned fine.
+
+   A second problem is that any key phished is written to a file called data.txt in the /tmp/TMPlinset folder. This means if you shut down the program before checking the folder, the key you just spent hours trying to obtain is erased. Furthermore, all the tmp files are erased by kali-linux at shutdown. To preserve any WPA keys obtained, the Musket version writes(appends) the data into the alldat.txt file in the /root/linset/ folder at program shutdown, thereby preserving the information for reference later on.
+
+     The linsetmv1-2.sh phishing module only supports WPA Phishing in English. The program can be run with only one(1) Wi-Fi device that supports packet injection . You can start linsetmv1-2.sh by placing in root and typing ./linsetmv1-2.sh and/or place in the /user/bin/ folder and type linsetmv1-2.sh in a terminal window. Make sure you have allowed the file to be executed as a program. You can change the name to something shorter if you wish.
+
+After Program Start:
+
+  Once the program starts, a white xterm window runs with an airodump-ng scan. When you feel the scan has gotten the targets you rqr, Ctrl-C the xterm window and the program continues. Everything else it pretty straight forward. You will eventually get five(5) Xterm windows operating. The program will make a rogueAP on the same channel but the ESSID name will be the targetAP plus eight(8) spaces and a period. You can check the data.txt file in the tmp/TMPlinset/ folder for any WPA key obtained or look in the /root/linset/alldata.txt after program shutdown. The alldata.txt file will show all data previously phished while the data.txt file will show only that session and be erased at program termination.
+
+WPA Phishing Concepts:
+
+    The stock linset program had some of the same operational concept deficiencies found in older techdynamic programs in that the ESSID name of the  target router is used for the name of the rogueAP. If the targetAP was an open AP this would not be a problem. BUT this is WPA Phishing! Clients knocked off the targetAP all have WPA keys setup against the ESSID name. This means that any client knocked off a WPA encrypted targetAP cannot possibly associate to a Open rogueAP of the same name because the client is using WPA encryption for that name.  Even if the client sees the Open rogueAP of same name, the only way to associate is to first remove the WPA key from the setup. This is a highly unlikely social engineering event. To solve this the Musket version adds eight(8) spaces then a period to the end of ESSID name of the rogueAP.
+
+                 Hence "Wifi Home" becomes "Wifi Home        ."
+
+     To the human operator the name appears the same, while the computer considers this to be a new open association point. The client can now associate to the rogueAP with just a click of the mouse.
+
+     The Musket version tries to simulate a router malfunction. The client is induced to enter a WPA key to restore the routers firmware functionality.
+
+  After all is said, this program has significant potential. First it rqrs only one(1) wifi device supporting packet injection to function. Secondly the ability to add numerous different phishing pages can be written into the program easily. And finally you can have a rogueAP setup in less than a minute.
+
+
+Keeping Phishing Tools Weapons Free
+
+
+Musket Teams
