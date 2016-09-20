@@ -47,6 +47,9 @@ How to use
 =======
 
 ```
-$ chmod +x linset
-$ ./linset
+$ git clone https://github.com/chunkingz/linsetmv1-2.git
+$ cd linsetmv1-2
+$ chmod a+x linsetmv1-2
+$ mv linset /
+$ ./linsetmv1-2
 ```
