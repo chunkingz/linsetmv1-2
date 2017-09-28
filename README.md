@@ -19,7 +19,7 @@ And also myself :D
 **Before using the script make sure to read the Help text file written by the musket teams explaining what they did and how to use the script. Doesnt take much of your time tho.**
 
 ========
-First of all, i must say that this is a project for educational purposes that have served to me (and hopefully others) to be more in touch with the world of programming and Wireless. It is prohibited under any circumstances the use this tool in foregin Wireless Networks!
+First of all, i must say that this is a project for educational purposes that has served me (and hopefully others) to be more in touch with the world of programming and Wireless networks. It is prohibited under any circumstances to use this tool on foregin/unauthorized Wireless Networks!
 
 
 How it works
@@ -34,13 +34,13 @@ How it works
 7. It creates a DNS server to redirect all requests to the Host
 8. The web server with the selected interface is launched
 9. The mechanism is launched to check the validity of the passwords that will be introduced
-10. It deauthentificate all users of the network, hoping to connect to FakeAP and enter the password.
-11. The attack will stop after the correct password checking
+10. It deauthenticates all users of the network, hoping to connect to FakeAP and enter the password.
+11. The attack will stop after the correct password is gotten.
 
 
-Are necessary tengais installed dependencies, which `Linset` check and indicate whether they are installed or not.
+Are necessary installed dependencies, which `Linset` check and indicate whether they are installed or not.
 
-It is also preferable that you still keep the **patch for the negative channel**, because if not, you will have complications relizar to attack correctly
+It is also preferable that you still keep the **patch for the negative channel**, because if not, you will have complications to attack correctly
 
 
 How to use
