@@ -16,6 +16,24 @@ And also myself :D
 
 =======
 
+
+How to use
+=======
+
+```
+git clone https://github.com/chunkingz/linsetmv1-2.git
+
+cd linsetmv1-2
+
+chmod a+x linsetmv1-2
+
+mv linset /
+
+./linsetmv1-2
+
+```
+===========
+
 **Before using the script make sure to read the Help text file written by the musket teams explaining what they did and how to use the script. Doesnt take much of your time tho.**
 
 ========
@@ -43,18 +61,3 @@ Are necessary installed dependencies, which `Linset` check and indicate whether 
 It is also preferable that you still keep the **patch for the negative channel**, because if not, you will have complications to attack correctly
 
 
-How to use
-=======
-
-```
-git clone https://github.com/chunkingz/linsetmv1-2.git
-
-cd linsetmv1-2
-
-chmod a+x linsetmv1-2
-
-mv linset /
-
-./linsetmv1-2
-
-```
