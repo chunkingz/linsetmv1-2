@@ -54,4 +54,4 @@ mv linset /
 
 :purple_heart: It is also preferable that you still keep the **patch for the negative channel**, else you will have complications attacking correctly.
 
-Happy Phishing :love:
+Happy Phishing :heart:
